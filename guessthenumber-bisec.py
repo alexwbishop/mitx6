@@ -1,3 +1,5 @@
+# Alex W. Bishop
+# alex.w.bishop@gmail.com
 # guesses a secret number chosen by the user using bisection search
 # number is only stored in human's head during guessing
 

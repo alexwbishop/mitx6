@@ -1,3 +1,5 @@
+# Alex W. Bishop
+# alex.w.bishop@gmail.com
 # RETURNS THE LONGEST ALPHABETICAL SUBSTRING OF A GIVEN STRING
 s = str(raw_input('Enter a string: '))
 

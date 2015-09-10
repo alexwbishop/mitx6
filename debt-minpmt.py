@@ -7,8 +7,9 @@ def PayMinimum(balance, annualInterestRate, monthlyPaymentRate, period):
     monthlyPaymentRate = .2float
     period: int (# of months to pay minimum)'''
     totalPaid = 0.0
+    monthlyInterestRate = annualInterestRate/period
     # PRINT BALANCE AT END OF EACH MONTH
-    for month in range(int(period)):
+    for month in range(period):
         print "Month: %d" % (month + 1)
         # ub = b - p
         monthlyPmt = monthlyPaymentRate * balance
@@ -16,7 +17,6 @@ def PayMinimum(balance, annualInterestRate, monthlyPaymentRate, period):
         print "Minimum monthly payment: %.2f" % monthlyPmt
         unpaidBal = balance - monthlyPmt
         # b = ub + r/12 * ub
-        monthlyInterestRate = annualInterestRate/period
         balance = unpaidBal + monthlyInterestRate * unpaidBal
         print "Remaining balance: %.2f" % balance
     # PRINT FINAL PAID AND REMAINING BALANCE

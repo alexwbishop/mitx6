@@ -6,9 +6,9 @@
 def GuessTheNumber(low, high):
     '''low and high: int
     returns an int within low and high according to user response'''
-    response = None
     print('Please think of a number between %d and %d!' % (low, high)) # prompts for secret number
     guess = (high + low)/2  # make initial midpoint guess
+    response = str(raw_input('Enter 'r' when you are ready for me to guess your secret number.'))
     while response != 'c':
         print('Is your secret number %d?' % guess) # ask user if guess is correct
         print "Enter 'h' to indicate the guess is too high. ",

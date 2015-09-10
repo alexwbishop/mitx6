@@ -1,3 +1,5 @@
+# Alex W. Bishop
+# alex.w.bishop@gmail.com
 # computes a fixed monthly payment to pay off an interest-bearing debt within x months
 # uses bisection search
 balance = float(raw_input("balance = ")) # current balance at beginning of year
